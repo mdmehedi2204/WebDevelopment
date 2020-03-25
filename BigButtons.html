@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>BigButtons</title>
+    <style>
+        #container div {
+            position: relative;
+        }
+        
+        .BigButtons {
+            display: flex;
+            margin: auto;
+            width: 80%;
+            justify-content: space-around;
+            height: 330px;
+        }
+        
+        .BigButton1 {
+            background-color: white;
+            border: 3px solid rgb(96, 24, 124) !important;
+            transition: all 0.4s ease 0s;
+        }
+        
+        .BigButton1:hover {
+            color: #ffffff !important;
+            background: rgb(96, 24, 124);
+            border-color: rgb(96, 24, 124) !important;
+            transition: all 0.4s ease 0s;
+        }
+        
+        .BigButton1,
+        .BigButton1:hover {
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        
+        .Popular {
+            border-radius: 50%;
+        }
+        
+        .Popular:hover {
+            color: white;
+        }
+        
+        .Popular,
+        .Popular:hover {
+            position: relative;
+            top: 50px;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        /*----------TEXT------------------*/
+        
+        .animatedText a {
+            color: rgb(96, 24, 124);
+            text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
+            font-size: 40px;
+            text-decoration: none;
+            letter-spacing: -3px;
+            margin: 0;
+            position: absolute;
+            top: 1300px;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+        
+        .animatedText a:before,
+        .animatedText a:after {
+            content: '';
+            padding: 60px 40px;
+            position: absolute;
+            left: 50%;
+            width: 100%;
+            top: 50%;
+            display: block;
+            border: 15px solid rgb(96, 24, 124);
+            transform: translateX(-50%) translateY(-50%) rotate(0deg);
+            animation: 10s infinite alternate ease-in-out tipsy;
+        }
+        
+        .animatedText a:before {
+            border-color: rgb(96, 24, 124) rgb(96, 24, 124) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+            z-index: -1;
+        }
+        
+        .animatedText a:after {
+            border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgb(96, 24, 124) rgb(96, 24, 124);
+            box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="BigButtons">
+        <div class="BigButton1" onclick="window.location.href='#'">
+            <div class="Popular">Text #1</div>
+        </div>
+        <div class="BigButton1" onclick="window.location.href='#'">
+            <div class="Popular">Text #2</div>
+        </div>
+        <div class="BigButton1" onclick="window.location.href='#'">
+            <div class="Popular">Text #3</a>
+            </div>
+    </header>
+</body>
